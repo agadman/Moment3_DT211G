@@ -6,29 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.scss">
     <title>Moment 3 - CSS preprocessorer</title>
+    <script type="module" src="js/script.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Hem</a></li>
-                <li><a href="#">Om mig</a></li>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="menu">
+                <li><a href="#" class="active">Hem</a></li>
                 <li><a href="#">Tjänster</a></li>
                 <li><a href="#">Galleri</a></li>
-                <li><a href="#">SASS</a></li>
+                <li><a href="./pages/sass.html">SASS</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
             <h1>CSS preprocessorer</h1>
-            <p>Kurs om css preprocessorer</p>
-            <button>SASS</button>
+            <p>Den här webbplatsen har jag byggt som ett delmoment i kursen Frontendbaserad webbutveckling. Momentet handlar om CSS-preprocessorer.</p>
+            <a href="./pages/sass.html">
+                <button>SASS</button>
+            </a>
+            <div class="hero-images">
+                <img src="./images/coffee_beans.jpg" alt="Kaffe bönor" class="img1">
+                <img src="./images/coffee_cup.jpg" alt="Kaffekoppar med cappucino" class="img2">
+            </div>
         </section>
         <section class="grid-container">
-            <div class="grid-item">Innovation</div>
-            <div class="grid-item">Design</div>
-            <div class="grid-item">Utveckling</div>
+            <div class="grid-item">
+                <p>Effektivitet - Med SASS går det snabbare och smidigare att skriva CSS tack vare variabler, mixins och nesting, vilket sparar tid och minskar upprepning.</p>
+            </div>
+            <div class="grid-item">
+                <p>Struktur - Med partials och moduler kan koden delas upp i mindre filer, vilket gör den mer organiserad och lättare att arbeta med i stora projekt.</p>
+            </div>
+            <div class="grid-item">
+                <p>Återanvändbarhet - Mixins och variabler gör det lätt att återanvända kod, vilket gör uppdateringar enklare och minskar risken för att designen blir inkonsekvent.</p>
+            </div>
         </section>
     </main>
 </body>

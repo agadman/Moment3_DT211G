@@ -1,0 +1,9 @@
+@use 'variables';
+
+body {
+    font-family: variables.$font-stack;
+    p {
+        line-height: 1.5;
+    }
+}
+

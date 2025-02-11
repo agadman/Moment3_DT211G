@@ -1,5 +1,8 @@
-$primary-color: rgb(226, 188, 194);
-
-body {
-    background-color: $primary-color;
-}
+@use 'variables';
+@use 'mixins';
+@use 'base';
+@use 'header';
+@use 'hero';
+@use 'grid';
+@use 'layout';
+@use 'normalize';

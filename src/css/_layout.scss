@@ -1,0 +1,49 @@
+@use 'variables';
+
+.saas-main-content {
+    width: 100%;
+    background: variables.$light-hero-bg;
+    color: variables.$light-text;
+}
+
+.saas-text {
+    max-width: 50rem; 
+    margin: 0 auto; 
+    padding: 1rem;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    h2, p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .saas-text {
+        max-width: 100%;
+        padding: 1.5rem; 
+    }
+
+    h1 {
+        font-size: 2rem; 
+        margin-bottom: 2rem; 
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+    }
+
+    p {
+        font-size: 1.1rem; 
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .saas-main-content {
+        background: variables.$dark-hero-bg;
+        color: variables.$dark-text;
+    }
+}

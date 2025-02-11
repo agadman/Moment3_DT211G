@@ -1,0 +1,15 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin position-image($width, $height, $top, $left, $z-index) {
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    z-index: $z-index;
+    object-fit: cover;
+}

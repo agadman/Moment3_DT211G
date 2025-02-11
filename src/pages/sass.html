@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.scss">
+    <title> SASS - Moment 3 - CSS preprocessorer</title>
+    <script type="module" src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="menu">
+                <li><a href="../index.html" >Hem</a></li>
+                <li><a href="#">Tjänster</a></li>
+                <li><a href="#">Galleri</a></li>
+                <li><a href="#" class="active">SASS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="saas-main-content">
+        <section class="saas-text">
+            <h1>Utvärdering av mitt arbete med SASS</h1>
+            <h2>Fördelar</h2>
+            <p>Att arbeta med SASS har varit en lärorik och intressant upplevelse. En av de största fördelarna jag märkt är hur mycket mer organiserad min CSS-kod blir. Genom att använda variabler, mixins och @use/@import kan jag återanvända kod och göra ändringar snabbt, vilket sparar både tid och energi. Strukturen blir tydligare, och det blir enklare att hantera större projekt.</p>
+            <p>En annan stor fördel är nestning, som gör att jag kan skriva mer läsbar kod och undvika upprepningar. Det känns naturligare att gruppera relaterade stilar på detta sätt.</p>
+            <h2>Nackdelar</h2>
+            <p>Nackdelarna är få, men en utmaning i början var att förstå hur allt hängde ihop, särskilt med filstrukturen och hur man bäst delar upp koden i olika partials. Dessutom kräver SASS en kompilering till vanlig CSS, vilket kan kännas som ett extra steg jämfört med att direkt skriva i CSS.</p>
+            <p>Jag märkte också att jag ofta fick error när jag höll på att skriva koden men ännu inte hade skrivit klart ett semikolon. Då fick jag ett felmeddelande om att ett semikolon saknades, och även om jag lade till det efteråt, hjälpte det inte alltid. Jag var tvungen att köra om byggprocessen genom <code>npm start</code> för att felet skulle försvinna.</p>
+            <h2>Sammanfattning</h2>
+            <p>Sammanfattningsvis tycker jag att SASS är ett kraftfullt verktyg som gör det enklare att hantera och underhålla CSS i större projekt. Trots en liten inlärningströskel känns det som en värdefull förbättring jämfört med vanlig CSS. Ett irritationsmoment var dock att små misstag, som att tillfälligt sakna ett semikolon, kunde orsaka fel som krävde att jag startade om byggprocessen för att lösa dem.</p>
+        </section>    
+    </main>   
+</body>
+</html>

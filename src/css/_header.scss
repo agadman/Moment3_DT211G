@@ -1,0 +1,109 @@
+@use 'variables';
+
+header {
+    background: variables.$light-header;
+    padding: 2rem 1rem;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100%; 
+        gap: 2rem; 
+        
+        li a {
+            color: variables.$orange-color;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+
+    .menu-toggle {
+        display: none; 
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+
+        span {
+            width: 30px;
+            height: 3px;
+            background-color: variables.$orange-color;
+            transition: 0.3s;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: flex;
+        }
+    
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            background-color: variables.$light-header; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            gap: 2rem;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; 
+        }
+    
+        .menu.show {
+            display: flex;
+        }
+    
+        .menu li {
+            margin-bottom: 1rem;
+        }
+    
+        .menu li a {
+            color: variables.$orange-color;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background: variables.$dark-header;
+    }
+
+    @media (max-width: 768px) {
+        .menu {
+            background-color: variables.$dark-header;
+        }
+
+        .menu li a {
+            color: #fff;
+        }
+    }
+}
