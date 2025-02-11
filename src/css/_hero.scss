@@ -1,20 +1,15 @@
 @use 'variables';
 @use 'mixins';
+@use '_buttons';
 
 .hero {
-    @include mixins.flex-center;
-    flex-direction: column;
+    @include mixins.flex-center(column);
     text-align: center;
     background: variables.$light-hero-bg;
     padding: 4rem;
 
     button {
-        background: variables.$orange-color;
-        color: variables.$light-text;
-        border: none;
-        padding: 1rem 2rem;
-        cursor: pointer;
-        border-radius: 5px;
+        @extend .standard-button;
     }
 
     .hero-images {
