@@ -68,10 +68,10 @@ header {
             height: 100vh; 
             background-color: variables.$light-header; 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 2rem;
-            gap: 2rem;
+            padding: 10rem 0;
+            gap: 3rem;
             text-align: center;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             z-index: 1000; 
         }
