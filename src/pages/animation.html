@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.scss">
-    <title> SASS - Moment 3 - CSS preprocessorer</title>
+    <title> Animering - Moment 4 - CSS preprocessorer</title>
     <script type="module" src="../js/script.js"></script>
 </head>
 <body>
@@ -26,7 +26,31 @@
         </nav>
     </header>
     <main class="saas-main-content">
-    
+        <section class="animation-wrapper">
+            <h1 class="mirrored-title">Animering</h1>
+            <p>För muspekaren över titeln ovan och se text animationen.</p>
+            <div class="image-animation">
+                <h2>Bildanimation - Förstora en bild med transform vid hover</h2>
+                <div class="image-container">
+                    <img src="../images/puppy.jpg" alt="Handvalp som springer">
+                    <img src="../images/puppy_white.jpg" alt="Vit hundvalp">
+                    <img src="../images/pets.jpg" alt="Två hundar och två katter">
+                </div>
+            </div>
+            <div class="animated-box-keyframes">
+                <h2>Rörliga objekt - Rörlig animering med animation keyframes</h2>
+                <div class="animated-boxes-container">
+                    <div class="animated-box1"></div>
+                    <div class="animated-box2"></div>
+                    <div class="animated-box3"></div>
+                </div>  
+            </div>
+            <div class="animated-btn-wrapper">
+                <h2>Användarinteraktion - Animation med transition när man klickar på knappen</h2>
+                <button class="animate-btn">Klicka på mig</button>
+                <div class="interactive-box"></div> 
+            </div>    
+        </section>
     </main>   
 </body>
 </html>
