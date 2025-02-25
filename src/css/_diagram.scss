@@ -1,0 +1,38 @@
+@use 'variables';
+
+
+.diagram-main-wrapper {
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.canvas-wrapper {
+    max-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .titleAndCanvasContainer {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    canvas {
+        width: 100%;
+        max-height: 800px; 
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .diagram-main-wrapper {
+        background: variables.$dark-hero-bg;
+        color: variables.$dark-text;
+    }
+}
