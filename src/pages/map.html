@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/main.scss">
     <title>Karta - Moment 5 - Dynamiska webbplatser</title>
     <script type="module" src="../js/script.js"></script>
+    <script type="module" src="../js/map.js"></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,20 @@
             </ul>
         </nav>
     </header>
-    <main class="saas-main-content">
-    </main>   
+    <main class="map-main-content">
+        <h1>Karta</h1>
+        <div class="mapAndInputWrapper">
+            <div>
+                <input type="text" id="placeInput" placeholder="Sök plats...">
+                <button id="searchButton">Sök</button>
+            </div>
+            <div id="map"></div>
+        </div>
+    </main>  
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzZVs79JgUNospzeB96Rs0zQ5DoQ2Pz28&libraries=maps&callback=initMap&loading=async"
+        defer>
+    </script>
+</script>
 </body>
 </html>

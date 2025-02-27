@@ -64,8 +64,12 @@ document.addEventListener("DOMContentLoaded", async function () {
                         x: {
                             ticks: {
                                 autoSkip: false,
-                                maxRotation: 45,
-                                minRotation: 45
+                                maxRotation: 40,
+                                minRotation: 40,
+                                callback: function(value) {
+                                    let label = this.getLabelForValue(value);
+                                    return label.match(/.{1,36}/g) || label; 
+                                }
                             }
                         },
                         y: {
