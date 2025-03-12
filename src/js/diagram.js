@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async function () {
      * Här hämtas och bearbetas datan från API.
      * @async
      * @function fetchData
-     * @returns {Promise<{ courses: Array<Object>, programs: Array<Object> }>} Promise med filtrerad kurs- och programdata.
+     * @returns {Promise<{ courses: Array<Object>, programs: Array<Object> }>} Promise med filtrerad kurs- och programdata
      */
     async function fetchData() {
         try {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             return {
                 /**
-                 * Filtrerar ut kurser, sorterar i fallande (mest sökta först) och tar de 6 mest sökta.
+                 * Filtrerar ut kurser, sorterar i fallande (mest sökta först) och tar de 6 mest sökta
                  * @type {Array<Object>}
                  */
                 courses: data
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     .slice(0, 6),
 
                 /**
-                 * Filtrerar ut program, sorterar i fallande och tar de 5 mest sökta.
+                 * Filtrerar ut program, sorterar i fallande och tar de 5 mest sökta
                  * @type {Array<Object>}
                  */
                 programs: data
@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     /**
      * Skapar ett stapeldiagram.
      * @function createBarChart
-     * @param {HTMLCanvasElement} element - Canvas-elementet för diagrammet.
-     * @param {Array<Object>} courses - Array med kursdata.
+     * @param {HTMLCanvasElement} element - Canvas-elementet för diagrammet
+     * @param {Array<Object>} courses - Array med kursdata
      */
     function createBarChart(element, courses) {
         /**
@@ -97,10 +97,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     /**
-     * Skapar ett cirkeldiagram.
+     * Skapar ett cirkeldiagram
      * @function createPieChart
-     * @param {HTMLCanvasElement} element - Canvas-elementet för diagrammet.
-     * @param {Array<Object>} programs - Array med programdata.
+     * @param {HTMLCanvasElement} element - Canvas-elementet för diagrammet
+     * @param {Array<Object>} programs - Array med programdata
      */
     function createPieChart(element, programs) {
         /**
