@@ -17,6 +17,7 @@
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
-    "chart.js": "^4.4.8"
+    "chart.js": "^4.4.8",
+    "svgo": "^3.3.2"
   }
 }
